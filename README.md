@@ -4,4 +4,4 @@ This is a coding challenge host by Zero To Mastery, please see [here](https://gi
 
 ## WARNING, contains spinning/flashing colors that some individuals could be sensitive towards
 
-See to in live [here](https://victoriacheng15.github.io/ztm-spinning-around/)
+See it in live [here](https://victoriacheng15.github.io/ztm-spinning-around/)
