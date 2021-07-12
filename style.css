@@ -1,0 +1,57 @@
+:root {
+  --standard-radius: 50%;
+  --border-thickness: 10px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: burlywood;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  border: var(--border-thickness) solid transparent;
+  border-radius: 10px;
+  border-color: #d4f1f4 #75e6da #189ab4 #05445e;
+  animation: square 8s cubic-bezier(1, 0.75, 0, 0.42) infinite;
+}
+
+.line {
+  border: var(--border-thickness) solid transparent;
+  border-radius: var(--standard-radius);
+  border-color: #d4f1f4 #75e6da #189ab4 #05445e;
+  animation: thing 8s cubic-bezier(1, 0.75, 0, 0.42) infinite;
+}
+
+.line2 {
+  border: var(--border-thickness) solid transparent;
+  border-radius: var(--standard-radius);
+  border-color: #05445e #189ab4 #75e6da #d4f1f4;
+}
+
+@keyframes thing {
+  100% {
+    transform: rotateZ(0.5turn);
+  }
+}
+
+@keyframes square {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(0.9);
+    transform: rotateZ(0.8turn);
+  }
+}
